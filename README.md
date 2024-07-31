@@ -10,11 +10,28 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    npm install
    ```
 
-2. Start the app
+2. Start the app, si tienen android estudio instalado una vez el proyecto se haya ejecutado pueden iniciar un emulador oprimiendo unicamente la tecla 'a'
 
    ```bash
     npx expo start
    ```
+
+3. Start the app via tunnel
+   si tienen problemas con el comando normal de npx expo start, utilizen el siguiente comando este les permitira crear un tunel directo entre su dispositivo y la aplicacion en caso que gusten probar la aplicacion en su dispositivo.
+   ```bash
+    npx expo start --tunnel
+   ```
+
+Se implementaron las siguientes caracteristicas de acuerdo a : 
+Inicio de sesión de usuarios:
+        1. Inicio de sesión de usuarios existentes con usuario y contraseña.
+    - Pantalla principal con listado de notas:
+        1. Mostrar las notas del usuario actual en una lista.
+    - Funcionalidad para crear, editar y eliminar notas:
+        1. Crear nuevas notas con título y contenido.
+
+Los ajuestes que se le hicieron fueron creados en base a tener una adaptabilidad en react native todo se acomodo de forma que fuera una experiencia agradable al usuario
+se agregaron algunos detalles como que cada card tuviera un background diferente cada que el usuario agregaba una nueva nota para hacerla mas agradable a la vista.
 
 In the output, you'll find options to open the app in a
 
@@ -48,3 +65,6 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+
+
