@@ -13,5 +13,5 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-  ]
+, "app/utils/firebaseConfig.js", "app/components/navigation/TabBarIcon.jsx", "app/_layout.jsx", "context/NoteContext.jsx", "context/AuthContext.jsx", "app/utils/firebaseConfig.jsx", "app/components/Notes/NoteAddModal.jsx", "app/components/navigation/ScreenHeaderBtn.jsx", "app/screen/Home.jsx", "app/screen/LoginScreen.jsx", "app/index.jsx"  ]
 }
