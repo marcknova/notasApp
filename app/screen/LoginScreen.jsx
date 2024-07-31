@@ -23,14 +23,15 @@ export default function LoginScreen() {
     if (emailError || passwordError) {
       setEmail({ ...email, error: emailError });
       setPassword({ ...password, error: passwordError });
-    } else {
-      try {
-        await login(email.value, password.value).then((res) => {
-          router.replace("/screen/Home");
-        });
-      } catch (error) {
-        console.error("Failed to login", error);
-      }
+      return;
+    }
+    try {
+      await login(email.value, password.value).then((res) => {
+        ToastAndroid.show("Inicio de sesión exitoso", ToastAndroid.SHORT);
+        router.replace("/screen/Home");
+      });
+    } catch (error) {
+      ToastAndroid.show(error.message, ToastAndroid.LONG);
     }
   };
 

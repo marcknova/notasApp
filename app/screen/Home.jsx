@@ -1,7 +1,7 @@
 import { useNotes } from "@/context/NoteContext";
 import { Stack } from "expo-router";
 import { useState } from "react";
-import { StyleSheet, View, Text } from "react-native";
+import { StyleSheet, View, Text, useColorScheme } from "react-native";
 import { Button } from "react-native-paper";
 import NoteAddModal from "../components/Notes/NoteAddModal";
 import NoteEditModal from "../components/Notes/NoteEditModal";
@@ -11,6 +11,9 @@ export default function HomeScreen() {
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
   const [selectedNote, setSelectedNote] = useState(null);
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
+  const colorScheme = useColorScheme();
+
+  const color = colorScheme === "dark" ? "#FFFFFF" : "#000000";
 
   const { notes, deleteNote } = useNotes();
 
@@ -40,7 +43,7 @@ export default function HomeScreen() {
             title: "Notas",
             headerRight: () => (
               <Button
-                labelStyle={{ fontSize: 16, color: "#000000" }}
+                labelStyle={{ fontSize: 16, color: color }}
                 onPress={openAddModal}
               >
                 Agregar
