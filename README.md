@@ -24,14 +24,24 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 
 Se implementaron las siguientes caracteristicas de acuerdo a : 
 Inicio de sesión de usuarios:
-        1. Inicio de sesión de usuarios existentes con usuario y contraseña.
-    - Pantalla principal con listado de notas:
-        1. Mostrar las notas del usuario actual en una lista.
+   
+   1. Inicio de sesión de usuarios existentes con usuario y contraseña.
+usuario y contraseña siguen siendo los mismos.
+usuarios:
+correo: usuario2@prueba.com
+contraseña: usuario2
+
+correo: usuario1@prueba.com
+contraseña: usuario1
+
+   - Pantalla principal con listado de notas:
+   3. Mostrar las notas del usuario actual en una lista.
     - Funcionalidad para crear, editar y eliminar notas:
         1. Crear nuevas notas con título y contenido.
 
 Los ajuestes que se le hicieron fueron creados en base a tener una adaptabilidad en react native todo se acomodo de forma que fuera una experiencia agradable al usuario
 se agregaron algunos detalles como que cada card tuviera un background diferente cada que el usuario agregaba una nueva nota para hacerla mas agradable a la vista.
+
 
 In the output, you'll find options to open the app in a
 
